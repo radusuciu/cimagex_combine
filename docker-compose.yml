@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    cimagex_combine:
+        image: cimagex_combine
+        environment:
+            DEBUG: 'true'
+            LC_ALL: 'C.UTF-8'
+            LANG: 'C.UTF-8'
+            FLASK_APP: 'cimagex_combine/__init__.py'
+            FLASK_DEBUG: 1
+        volumes:
+            - .:/home/cimage/cimagex_combine
+        ports:
+            - "5001:5001"
+        tty: true
+        stdin_open: true

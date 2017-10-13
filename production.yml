@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    cimagex_combine:
+        build: .
+        environment:
+            DEBUG: 'false'
+            FLASK_DEBUG: 0
+        ports:
+          - "5001"
