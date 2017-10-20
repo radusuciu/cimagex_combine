@@ -7,7 +7,8 @@ RUN adduser --disabled-password --gecos '' cimage
 RUN chown -R cimage /home/cimage
 
 # install some deps
-RUN apt-get update && apt-get -y install python3-pip python3-venv
+RUN apt-get update && apt-get -y install python3-pip python3-venv git
+RUN pip3 install --upgrade pip
 
 WORKDIR /home/cimage/cimagex_combine
 USER cimage

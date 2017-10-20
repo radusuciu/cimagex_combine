@@ -9,6 +9,10 @@ var app = new Vue({
 
     },
     methods: {
-
+        process: function() {
+            this.$http.get('/api/combine').then(function(response) {
+                console.log(response);
+            });
+        }
     }
 });

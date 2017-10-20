@@ -9,3 +9,7 @@ api_blueprint = Blueprint('api_blueprint', __name__,
 @api_blueprint.route('/')
 def test(user, endpoint):
 	return jsonify('test')
+
+@api_blueprint.route('/combine')
+def combine():
+	return jsonify(api.combine())

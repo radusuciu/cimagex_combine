@@ -1,3 +1,6 @@
 flask
 gunicorn
 pyyaml
+requests
+BeautifulSoup4
+-e git+https://github.com/radusuciu/cimagex.git#egg=cimagex

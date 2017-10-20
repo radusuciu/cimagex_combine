@@ -3,7 +3,9 @@
 {% block content %}
 {% raw %}
 <div id="app" class="ui text container">
-
+	<div class="ui input">
+		<input type="text" v-on:keyup.enter="process">
+	</div>
 </div>
 {% endraw %}
 {% endblock %}

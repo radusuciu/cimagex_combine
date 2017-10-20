@@ -1,5 +1,4 @@
 from flask import Blueprint, send_file, render_template, request
-from cimagex_combine import redis
 import cimagex_combine.api as api
 
 
