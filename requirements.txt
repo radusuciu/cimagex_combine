@@ -1,4 +1,4 @@
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 -e git+https://github.com/radusuciu/cimagex.git@e41deba8ee9ccdfec8be60d5ad7505fcbd1ee801#egg=cimagex
 click==6.7
